@@ -30,10 +30,16 @@
     margin: 0 13px;
     letter-spacing: 4px;
     min-width: 275px;
+    transition: background-color .1s, color .1s;
   }
 
   a:nth-child(2) {
     padding: 10px 55px;
+  }
+
+  a:hover {
+    background-color: white;
+    color: $gradient-color-6;
   }
 }
 
