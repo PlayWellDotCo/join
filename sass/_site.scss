@@ -6,6 +6,10 @@ $gradient-color-4: #F4B0A7;
 $gradient-color-5: #F6A28A;
 $gradient-color-6: #C27B69;
 
+/* Other colors */
+$link-color: #FD6054;
+$link-hover-color: #050B3D;
+
 body {
   -webkit-font-smoothing: antialiased;
   background: linear-gradient($gradient-color-1, $gradient-color-2, $gradient-color-3, $gradient-color-4, $gradient-color-5, $gradient-color-6);
@@ -15,7 +19,11 @@ body {
 }
 
 a {
-  color: #FD6054;
+  color: $link-color;
   text-decoration: none;
   transition: color .1s;
+}
+
+a:hover {
+  color: $link-hover-color;
 }
