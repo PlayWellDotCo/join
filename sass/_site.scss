@@ -10,6 +10,10 @@ $gradient-color-6: #C27B69;
 $link-color: #FD6054;
 $link-hover-color: #050B3D;
 
+/* Breakpoints */
+$medium-screen: 850px;
+$small-screen: 610px;
+
 body {
   -webkit-font-smoothing: antialiased;
   background: linear-gradient($gradient-color-1, $gradient-color-2, $gradient-color-3, $gradient-color-4, $gradient-color-5, $gradient-color-6);

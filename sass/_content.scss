@@ -4,11 +4,29 @@
 
 #the-header {
   margin: 150px 0;
+
+  @media screen and (max-width: $medium-screen) {
+    margin: 110px 0;
+  }
+  @media screen and (max-width: $small-screen) {
+    margin: 75px 0;
+  }
 }
 
 #the-text {
   font-size: 48px;
   margin-bottom: 133px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  @media screen and (max-width: $medium-screen) {
+    font-size: 36px;
+    margin-bottom: 100px;
+  }
+  @media screen and (max-width: $small-screen) {
+    font-size: 24px;
+    margin-bottom: 67px;
+  }
 
   .line-divider {
     height: 180px;
@@ -21,20 +39,40 @@
 #the-buttons {
   margin-bottom: 70px;
 
+  @media screen and (max-width: $medium-screen) {
+    margin-bottom: 52px;
+  }
+
   a {
     border: 3px solid white;
     color: white;
     text-transform: uppercase;
     font-size: 19px;
     padding: 10px 22px;
-    margin: 0 13px;
+    margin: 13px;
     letter-spacing: 4px;
-    min-width: 275px;
+    white-space: nowrap;
     transition: background-color .1s, color .1s;
+    display: inline-block;
+    vertical-align: top;
+
+    @media screen and (max-width: $medium-screen) {
+      border: 2px solid white;
+      padding: 7px 16px;
+      margin: 10px;
+      letter-spacing: 3px;
+      font-size: 14px;
+    }
   }
 
   a:nth-child(2) {
-    padding: 10px 55px;
+    padding-left: 55px;
+    padding-right: 55px;
+
+    @media screen and (max-width: $medium-screen) {
+      padding-left: 42px;
+      padding-right: 42px;
+    }
   }
 
   a:hover {
@@ -47,6 +85,11 @@
   p {
     font-size: 19px;
     margin-bottom: 28px;
+
+    @media screen and (max-width: $medium-screen) {
+      font-size: 16px;
+      margin-bottom: 22px;
+    }
   }
 
   #the-social-networks {
