@@ -1,13 +1,12 @@
 {
-  "name": "signup.playwell.co",
+  "name": "join.playwell.co",
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
     "browserify": "^11.0.1",
     "gulp": "^3.9.0",
     "gulp-add-src": "^0.2.0",
-    "gulp-awspublish": "^2.0.2",
-    "gulp-awspublish-router": "^0.1.1",
+    "gulp-awspublish": "^3.0.1",
     "gulp-concat": "^2.6.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.4",

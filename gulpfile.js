@@ -5,7 +5,6 @@ var sass             = require('gulp-sass');
 var sourcemaps       = require('gulp-sourcemaps');
 var webserver        = require('gulp-webserver');
 var awspublish       = require('gulp-awspublish');
-var awspublishRouter = require("gulp-awspublish-router");
 var browserify       = require('browserify');
 var source           = require('vinyl-source-stream');
 var buffer           = require('vinyl-buffer');
@@ -46,7 +45,7 @@ gulp.task('js', function() {
       .pipe(source('app.js'))
       .pipe(buffer())
       .pipe(addsrc('./js/vendor/*.js'))  
-      .pipe(concat('signup.min.js'))
+      .pipe(concat('playwell.min.js'))
       .pipe(sourcemaps.init({loadMaps: true}))
         // Add transformation tasks to the pipeline here.
         .pipe(uglify())
@@ -71,8 +70,9 @@ gulp.task('publish', function() {
 
   var publisher = awspublish.create({
     params: {
-      Bucket: 'signup.playwell.co'
+      Bucket: 'join.playwell.co'
     },
+    region: 'us-west-2',
     accessKeyId:     credentials.accessKeyId,
     secretAccessKey: credentials.secretAccessKey,
   });

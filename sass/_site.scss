@@ -1,0 +1,20 @@
+/* Gradient colors */
+$gradient-color-1: #19265A;
+$gradient-color-2: #39458D;
+$gradient-color-3: #A490CF;
+$gradient-color-4: #F4B0A7;
+$gradient-color-5: #F6A28A;
+$gradient-color-6: #C27B69;
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient($gradient-color-1, $gradient-color-2, $gradient-color-3, $gradient-color-4, $gradient-color-5, $gradient-color-6);
+  color: white;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 600;
+}
+
+a {
+  color: #FD6054;
+  text-decoration: none;
+}
