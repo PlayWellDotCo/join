@@ -91,6 +91,7 @@ gulp.task('publish', function() {
 
   return merge(gzipped, images, other)
     .pipe(publisher.publish())
+    .pipe(publisher.cache())
     .pipe(awspublish.reporter());
 });
 
