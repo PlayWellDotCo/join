@@ -30,6 +30,9 @@
 
   .line-divider {
     height: 180px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,6 +99,9 @@
     margin: 0 auto;
     margin-bottom: 90px;
     width: 166px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: space-between;
     display: flex;
     align-items: center;
     justify-content: space-between;
