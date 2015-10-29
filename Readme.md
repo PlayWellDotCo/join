@@ -15,7 +15,7 @@ We use gulp as our task runner. There are 2 main tasks:
 
 ## Deployment
 
-The site is hosted on Amazon S3 using Collin's AWS account.
+The site is hosted on Amazon S3.
 
 Create a file in the root of this project called `aws-credentials.json`. It should look like this:
 
